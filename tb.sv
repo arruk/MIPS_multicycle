@@ -1,3 +1,5 @@
+`timescale 1ns/1ps
+
 `include "datapath.sv"
 
 module tb;
@@ -31,7 +33,7 @@ module tb;
             mem[{2'd0, memadd[31:2]}] <= outdata;
         
         i++;
-        if(stopf) begin
+        if(stopf || i>500) begin
             $display("finishing testbench");
             $writememb("memafter.dat", mem);
             $finish();
