@@ -6,4 +6,4 @@ a MIPS multicycle processor, that supports the following instructions:
 the processor was implemented in a single module, but separated from the memories. 
 datapath module is a comportamental verilog code, and it is used by testbench (tb.sv) module for the simulation, with the code exemple in instr.dat.
 
-UMMAGUMA.
+UMMAGUMMA.
