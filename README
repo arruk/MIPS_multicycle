@@ -1,1 +1,9 @@
-My multicycle MIPS project
+code and design by: lucas arruk
+
+a MIPS multicycle processor, that supports the following instructions:
+- SLL, SRL, JR, ADD, ADDI, SUB, AND, ANDI, OR, ORI, XOR, XORI, SLT, SLTI, J, JAL, BEQ, BNE, LW and SW.
+
+the processor was implemented in a single module, but separated from the memories. 
+datapath module is a comportamental verilog code, and it is used by testbench (tb.sv) module for the simulation, with the code exemple in instr.dat.
+
+UMMAGUMA.
